@@ -7,7 +7,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Rent a Movie - editado desde el colaborador</title>
+		<title>Rent a Movie - editado</title>
         <meta name="description" content="Mirá todas las películas y series desde la comodidad de tu casa. Rent a movie, compartiendo momentos.">
         <meta name="author" content="Maximiliano Yañez">
 
