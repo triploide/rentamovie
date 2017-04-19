@@ -11,4 +11,7 @@ if (count($errors)) {
 	exit();
 }
 
-guardarUsuario();
+guardarUsuario($path);
+
+$path = dirname(__FILE__) . '/../images/';
+guardarImagen('avatar', $path);

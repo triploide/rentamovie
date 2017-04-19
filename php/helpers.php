@@ -48,7 +48,7 @@ function getUsers ()
 	return $users;
 }
 
-function guardarUsuario()
+function guardarUsuario($path)
 {
 	//users es un array de arrays usuarios
 	$users = getUsers();
@@ -58,7 +58,8 @@ function guardarUsuario()
 		'nombre' => $_POST['nombre'],
 		'email' => $_POST['email'],
 		'edad' => $_POST['edad'],
-		'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
+		'password' => password_hash($_POST['password'], PASSWORD_DEFAULT),
+		'path' => $path
 	];
 
 	//guardo newUser dentro del array de usuarios
@@ -70,4 +71,36 @@ function guardarUsuario()
 	//guardarlo en el archivo json
 	file_put_contents('../usuarios.json', $users);
 }
+
+function guardarImagen($upload, $path)
+{
+	$errores = [];
+	if ($_FILES[$upload]["error"] == UPLOAD_ERR_OK) {
+		$nombre=$_FILES[$upload]["name"];
+		$archivo=$_FILES[$upload]["tmp_name"];
+
+		$ext = pathinfo($nombre, PATHINFO_EXTENSION);
+
+		if ($ext != "png" && $ext != "jpg") {
+			$errores[] = "No acepto la extension";
+		} else {
+			$nombre = str_replace('@', '-', $_POST['email']);
+			$nombre = str_replace('.', '-', $nombre);
+
+			//$nombre = uniqid();
+
+			move_uploaded_file($archivo, $path.$nombre.'.'.$ext);
+		}
+	} else {
+		$errores[] = "Ey, no pude subir la foto :(";
+	}
+	return $errores;
+}
+
+function getImageUser ($email) {
+	$path = str_replace('@', '-', $email);
+	$path = str_replace('.', '-', $path);
+	return 'images/'.$path.'.png';
+}
+
 //----------

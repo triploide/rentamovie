@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php
+include('php/helpers.php');
+?>
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if gt IE 9]> <html lang="en" class="ie"> <![endif]-->
@@ -212,80 +214,15 @@
 
                             <!-- page-title start -->
                             <!-- ================ -->
-                            <h1 class="page-title">Registro</h1>
+                            <h1 class="page-title">Perfil</h1>
                             <div class="separator-2"></div>
                             <!-- page-title end -->
 
-                            <?php if (isset($_SESSION['errors'])): ?>
-                                <div class="alert alert-danger">
-                                    <?php foreach($_SESSION['errors'] as $error): ?>
-                                        <p><?php echo $error; ?></p>
-                                    <?php endforeach; ?>
-                                </div>
-                            <?php endif; ?>
+                            <?php
+                                $path = getImageUser('bart@mail.com');
+                            ?>
 
-                            <form action="php/registro.controller.php" method="post" enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <label for="nombre" class="col-sm-2 control-label">Nombre</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" name="nombre" class="form-control">
-                                    </div>
-                                </div>
-
-                                <p>&nbsp;</p>
-
-                                <div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">Email</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" name="email" class="form-control">
-                                    </div>
-                                </div>
-
-                                <p>&nbsp;</p>
-
-                                <div class="form-group">
-                                    <label for="edad" class="col-sm-2 control-label">Edad</label>
-                                    <div class="col-sm-10">
-                                        <input type="number" name="edad" class="form-control">
-                                    </div>
-                                </div>
-
-                                <p>&nbsp;</p>
-
-                                <div class="form-group">
-                                    <label for="password" class="col-sm-2 control-label">Contraseña</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" name="password" class="form-control">
-                                    </div>
-                                </div>
-
-                                <p>&nbsp;</p>
-
-                                <div class="form-group">
-                                    <label for="password2" class="col-sm-2 control-label">Confirmación</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" name="password2" class="form-control">
-                                    </div>
-                                </div>
-
-                                <p>&nbsp;</p>
-
-                                <div class="form-group">
-                                    <label for="avatar" class="col-sm-2 control-label">Avatar</label>
-                                    <div class="col-sm-10">
-                                        <input type="file" name="avatar" class="form-control">
-                                    </div>
-                                </div>
-
-                                <p>&nbsp;</p>
-
-                                <div class="form-group">
-                                    <div class="col-sm-10 col-sm-offset-2">
-                                        <input type="submit" name="enviador" class="form-control btn btn-default" value="Enviar">
-                                    </div>
-                                </div>
-
-                            </form>
+                            <img src="<?php echo $path; ?>" alt="Avatar">
 
                         </div>
                         <!-- main end -->
