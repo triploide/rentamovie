@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"se",
+				"segundosDesde1970"
+			],
+			[
+				"_",
+				"$_COOKIE〔variable〕"
+			],
+			[
+				"session_de",
+				"session_destroy〔function〕"
+			],
+			[
+				"comp",
+				"components"
+			],
+			[
+				"con",
+				"contenido"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"FILTER_S",
+				"FILTER_SANITIZE_ENCODED〔constant〕"
+			],
+			[
+				"url",
+				"urlencode〔function〕"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
 				"series",
 				"series/720x360"
 			],
@@ -98,10 +134,6 @@
 			[
 				"numer",
 				"numeroPad"
-			],
-			[
-				"html",
-				"htmlspecialchars〔function〕"
 			],
 			[
 				"margin",
@@ -291,15 +323,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "episodio.php",
-			"settings":
-			{
-				"buffer_size": 26204,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -308,10 +331,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 115.0,
-		"last_filter": "",
+		"height": 443.0,
+		"last_filter": "Package Control: ",
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
 			[
 				"align",
 				"Preferences: Alignment File Settings – Default"
@@ -323,10 +350,6 @@
 			[
 				"pac",
 				"Package Control: Install Package"
-			],
-			[
-				"Package Control: ",
-				"Package Control: Remove Package"
 			],
 			[
 				"ins",
@@ -362,11 +385,63 @@
 	],
 	"file_history":
 	[
-		"/C/wamp/www/greentomato/rentamovie/index.php",
-		"/C/wamp/www/greentomato/rentamovie/peliculas.php",
-		"/C/wamp/www/greentomato/rentamovie/temporada.php",
-		"/C/wamp/www/greentomato/rentamovie/serie.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_carr_especializacion_san_isidro_derecho_tributario.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_asesoramiento_legal_de_empresas.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_asesoramiento_legal_de_empresas.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_derecho_ambiental.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_codigo_civil_y_comercial_de_la_nacion.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_discapacidad_y_derechos.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_derecho_de_familia_ninez_y_adolescencia.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_neurociencias_y_derecho.php",
+		"/C/wamp/www/derecho-2014/include/contactenos/posgrado.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_codigo_civil_y_comercial_de_la_nacion.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_derecho_ambiental.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_derecho_de_familia_ninez_y_adolescencia.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_discapacidad_y_derechos.php",
+		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_neurociencias_y_derecho.php",
+		"/C/wamp/www/digital-house/clase9/pagina2.php",
+		"/C/wamp/www/digital-house/clase9/pagina1.php",
+		"/C/wamp/www/digital-house/clase9/php/cookies.controller.php",
+		"/C/wamp/www/digital-house/clase9/form.php",
+		"/C/wamp/www/digital-house/clase9/php/cerrarSesion.controller.php",
+		"/C/wamp/www/digital-house/clase9/php/session.controller.php",
+		"/C/wamp/www/greentomato/rentamovie/php/helpers.php",
+		"/C/wamp/www/greentomato/rentamovie/php/registro.controller.php",
 		"/C/wamp/www/greentomato/rentamovie/episodio.php",
+		"/C/wamp/www/greentomato/rentamovie/registro.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/partials/header.php",
+		"/C/wamp/www/greentomato/rentamovie/temporada.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/aside/temporadas.php",
+		"/C/wamp/www/greentomato/rentamovie/serie.php",
+		"/C/wamp/www/greentomato/rentamovie/series.php",
+		"/C/wamp/www/greentomato/rentamovie/index.php",
+		"/C/wamp/www/greentomato/rentamovie/pelicula.php",
+		"/C/wamp/www/greentomato/rentamovie/perfil.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/aside/episodios.php",
+		"/C/wamp/www/greentomato/rentamovie/peliculas.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/aside/categorias.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/aside/relacionados.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/components/calls-to-action/novedades.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/partials/call-to-action.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/components/banners/home.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/banners/home.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/banners",
+		"/C/wamp/www/greentomato/rentamovie/tpl/partials/scripts.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/partials/footer.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/aside/buscar.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/partials/head.php",
+		"/C/wamp/www/greentomato/rentamovie/tpl/partials",
+		"/C/Users/Casa/Desktop/busquedas.php",
+		"/C/Users/Casa/Desktop/graduados.php",
+		"/C/Users/Casa/Desktop/index.php",
+		"/C/Users/Casa/Desktop/alumnos.php",
+		"/C/wamp/www/data.txt",
+		"/C/wamp/www/fichero.php",
+		"/C/wamp/www/digital-house/clase5/formulario.php",
+		"/C/wamp/www/digital-house/clase5/procesar.php",
+		"/C/wamp/www/digital-house/clase5.php",
+		"/C/wamp/www/sanitize.php",
+		"/C/Users/Casa/Desktop/newsletter_actividades_06-04-2017.html",
 		"/C/wamp/www/greentomato/rentamovie/css/custom.css",
 		"/C/wamp/www/greentomato/rentamovie/template/blog-medium-image-right-sidebar.html",
 		"/C/wamp/www/greentomato/rentamovie/template/blog-medium-image-left-sidebar.html",
@@ -437,59 +512,7 @@
 		"/C/wamp/www/greentomato/comunicaciones/js/actividades.js",
 		"/C/wamp/www/greentomato/developer-factory/index.php",
 		"/C/wamp/www/greentomato/developer-factory/css/custom-styles.css",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/nav.tpl",
-		"/C/wamp/www/greentomato/developer-factory/loginb.php",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/nav-admin.tpl",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/nav-autor.tpl",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/javascript.tpl",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/head.tpl",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/header.tpl",
-		"/C/wamp/www/greentomato/developer-factory/.gitignore",
-		"/C/wamp/www/greentomato/developer-factory/php/checkers/login.checker.php",
-		"/C/wamp/www/greentomato/developer-factory/php/incluedes/definer.js",
-		"/C/wamp/www/greentomato/developer-factory/php/incluedes/definer.php",
-		"/C/wamp/www/greentomato/developer-factory/php/bootstrap.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/models/Noticia.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/models/Evento.php",
-		"/C/wamp/www/greentomato/becas/admin/php/models/Pregunta.php",
-		"/C/wamp/www/greentomato/becas/admin/php/models/Imagen.php",
-		"/C/wamp/www/greentomato/becas/admin/php/models/Beca.php",
-		"/C/wamp/www/greentomato/developer-factory/php/models/Email.php",
-		"/C/wamp/www/greentomato/developer-factory/php/generate.php",
-		"/C/wamp/www/greentomato/developer-factory/php/bootstrap.example.php",
-		"/C/Users/Casa/Desktop/bootstrap.php",
-		"/C/wamp/www/greentomato/developer-factory/js/demo.min.js",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contacto.controller.php",
-		"/C/wamp/www/greentomato/comunicaciones/tpl/contacto.tpl",
-		"/C/wamp/www/greentomato/comunicaciones/js/contacto.js",
-		"/C/wamp/www/greentomato/comunicaciones/php/replacers/contacto.full.replacer.php",
-		"/C/wamp/www/greentomato/comunicaciones/tpl/partials/redes.tpl",
-		"/C/wamp/www/greentomato/comunicaciones/php/autocompletes/responsables.autocomplete.php",
-		"/C/Users/Casa/Desktop/PHP_errors.log",
-		"/C/Users/Casa/Desktop/roulette.js-master/roulette.js",
-		"/C/Users/Casa/AppData/Local/Temp/Rar$DRa0.376/roulette.js-master/sample/demo.html",
-		"/C/Users/Casa/Desktop/ruleta/css/ruleta.css",
-		"/C/Users/Casa/Desktop/ruleta/js/Ruleta.js",
-		"/C/Users/Casa/Desktop/test.html",
-		"/C/wamp/www/curso/test.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/models/Ubicacion.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/models/Contacto.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactoToFile.controller.php",
-		"/C/wamp/www/derecho-2014/include/contactenos/institucional.php",
-		"/C/Users/Casa/Desktop/header.php",
-		"/C/Users/Casa/Desktop/definer.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/uploaders/actividad.uploader.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/includes/definer.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/cambio.controller.php",
-		"/C/Users/Casa/Desktop/newsletter_actividades_30-03-2017 (1).html",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/vinculacion-ciudadana.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/models/Icon.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/traductorado.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/revista-academia.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/publicaciones.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/programas-internacionales.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/universidad-discapacidad.php",
-		"/C/wamp/www/greentomato/comunicaciones/php/controllers/contactenos/becas.php"
+		"/C/wamp/www/greentomato/developer-factory/tpl/partials/nav.tpl"
 	],
 	"find":
 	{
@@ -500,6 +523,7 @@
 		"height": 166.0,
 		"where_history":
 		[
+			"C:\\wamp\\www\\greentomato\\rentamovie\\episodio.php,C:\\wamp\\www\\greentomato\\rentamovie\\index.php,C:\\wamp\\www\\greentomato\\rentamovie\\peliculas.php,C:\\wamp\\www\\greentomato\\rentamovie\\perfil.php,C:\\wamp\\www\\greentomato\\rentamovie\\registro.php",
 			"C:\\wamp\\www\\greentomato\\rentamovie\\episodio.php,C:\\wamp\\www\\greentomato\\rentamovie\\index.html,C:\\wamp\\www\\greentomato\\rentamovie\\index.php,C:\\wamp\\www\\greentomato\\rentamovie\\peliculas.php,C:\\wamp\\www\\greentomato\\rentamovie\\rentamovie.sublime-project,C:\\wamp\\www\\greentomato\\rentamovie\\serie.php,C:\\wamp\\www\\greentomato\\rentamovie\\temporada.php",
 			"C:\\wamp\\www\\greentomato\\developer-factory\\php",
 			"C:\\wamp\\www\\greentomato\\developer-factory\\tpl",
@@ -515,6 +539,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"blog-post.html",
+			"components/call-to-action",
+			"php",
 			"relacion",
 			"Rent a Move",
 			"tempo",
@@ -639,10 +666,7 @@
 			"compra",
 			"empty",
 			"style",
-			"$form",
-			"$el",
-			"$list",
-			"all("
+			"$form"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -650,6 +674,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"episodio.php",
+			"pelicula.php",
+			"components/calls-to-action",
 			"Rent a Movie",
 			"tag",
 			"",
@@ -707,38 +734,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "episodio.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 26204,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18360,
-								18360
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 8153.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -790,6 +787,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"peliculas",
+				"peliculas.php"
+			],
 			[
 				"serie",
 				"serie.php"
@@ -1297,10 +1298,6 @@
 			[
 				"licita",
 				"php\\models\\Licitacion.php"
-			],
-			[
-				"licitacion.ch",
-				"php\\checkers\\licitacion.checker.php"
 			]
 		],
 		"width": 0.0
@@ -1314,6 +1311,10 @@
 			[
 				"",
 				"C:\\wamp\\www\\greentomato\\comunicaciones\\comunicaciones.sublime-project"
+			],
+			[
+				"don",
+				"C:\\wamp\\www\\greentomato\\donde-reciclo\\donde-reciclo.sublime-project"
 			],
 			[
 				"be",
@@ -1355,7 +1356,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 314.0,
+	"side_bar_width": 344.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

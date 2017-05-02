@@ -1,6 +1,3 @@
-<?php
-include('php/helpers.php');
-?>
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if gt IE 9]> <html lang="en" class="ie"> <![endif]-->
@@ -15,12 +12,6 @@ include('php/helpers.php');
         <?php include "tpl/partials/head.php" ?>
     </head>
 
-    <!-- body classes:  -->
-    <!-- "boxed": boxed layout mode e.g. <body class="boxed"> -->
-    <!-- "pattern-1 ... pattern-9": background patterns for boxed layout mode e.g. <body class="boxed pattern-1"> -->
-    <!-- "transparent-header": makes the header transparent and pulls the banner to top -->
-    <!-- "gradient-background-header": applies gradient background to header -->
-    <!-- "page-loader-1 ... page-loader-6": add a page loader to the page (more info @components-page-loaders.html) -->
     <body class="no-trans front-page">
 
         <!-- scrollToTop -->
@@ -38,8 +29,9 @@ include('php/helpers.php');
             <div class="breadcrumb-container">
                 <div class="container">
                     <ol class="breadcrumb">
-                        <li><i class="fa fa-home pr-10"></i><a href="index.html">Home</a></li>
-                        <li class="active">Perfil</li>
+                        <li><i class="fa fa-home pr-10"></i><a href="/">Home</a></li>
+                        <li><a href="/peliculas.php">Películas</a></li>
+                        <li class="active">Ghostbusters</li>
                     </ol>
                 </div>
             </div>
@@ -49,28 +41,41 @@ include('php/helpers.php');
             <!-- ================ -->
             <section class="temporada-container">
 
+                <div class="image-cover" style="background-image: url(content/peliculas/720x360/ghostbusters.jpg);"></div>
+
                 <div class="container">
 
                     <div class="row">
 
                         <!-- main start -->
                         <!-- ================ -->
-                        <div class="main col-md-12">
+                        <div class="main col-md-8">
 
                             <!-- page-title start -->
                             <!-- ================ -->
-                            <h1 class="page-title">Perfil</h1>
+                            <h1 class="page-title">Ghostbusters</h1>
                             <div class="separator-2"></div>
                             <!-- page-title end -->
 
-                            <?php
-                                $path = getImageUser('bart@mail.com');
-                            ?>
-
-                            <img src="<?php echo $path; ?>" alt="Avatar">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7aW8oyTgA60"></iframe>
+                            </div>
 
                         </div>
                         <!-- main end -->
+
+                        <!-- sidebar start -->
+                        <!-- ================ -->
+                        <aside class="col-md-4 col-lg-3 col-lg-offset-1">
+                            <div class="sidebar">
+                                
+                                <?php include "tpl/aside/buscar.php"; ?>
+                                
+                                <?php include "tpl/aside/relacionados.php"; ?>
+                                                              
+                            </div>
+                        </aside>
+                        <!-- sidebar end -->
 
                     </div>
                 </div>
@@ -88,6 +93,3 @@ include('php/helpers.php');
 
     </body>
 </html>
-<?php
-unset($_SESSION['errors']);
-?>

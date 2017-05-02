@@ -30,7 +30,7 @@
                 <div class="container">
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home pr-10"></i><a href="/">Home</a></li>
-                        <li class="active">Películas</li>
+                        <li class="active">Series</li>
                     </ol>
                 </div>
             </div>
@@ -49,7 +49,7 @@
 
                             <!-- page-title start -->
                             <!-- ================ -->
-                            <h1 class="page-title">Películas - Todas</h1>
+                            <h1 class="page-title">Series - Todas</h1>
                             <div class="separator-2"></div>
                             <!-- page-title end -->
 
@@ -58,13 +58,13 @@
                                 <div class="row grid-space-10">
                                     <div class="col-md-5">
                                         <div class="overlay-container">
-                                            <img src="content/peliculas/720x360/ghostbusters.jpg" alt="">
-                                            <a class="overlay-link" href="pelicula.php"><i class="fa fa-link"></i></a>
+                                            <img src="content/series/720x360/the-office.jpg" alt="">
+                                            <a class="overlay-link" href="blog-post.html"><i class="fa fa-link"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
                                         <header>
-                                            <h2><a href="pelicula.php">Ghostbusters</a></h2>
+                                            <h2><a href="/serie.php">The Office</a></h2>
                                             <div class="post-info">
                                                 <span class="post-date">
                                                     <i class="icon-calendar"></i>
@@ -87,13 +87,13 @@
                                 <div class="row grid-space-10">
                                     <div class="col-md-5">
                                         <div class="overlay-container">
-                                            <img src="content/peliculas/720x360/jurassic-park.jpg" alt="">
-                                            <a class="overlay-link" href="pelicula.php"><i class="fa fa-link"></i></a>
+                                            <img src="content/series/720x360/mac-gyver.jpg" alt="">
+                                            <a class="overlay-link" href="blog-post.html"><i class="fa fa-link"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
                                         <header>
-                                            <h2><a href="pelicula.php">Jurassic Park</a></h2>
+                                            <h2><a href="serie.php">Mac Gyver</a></h2>
                                             <div class="post-info">
                                                 <span class="post-date">
                                                     <i class="icon-calendar"></i>
@@ -116,13 +116,13 @@
                                 <div class="row grid-space-10">
                                     <div class="col-md-5">
                                         <div class="overlay-container">
-                                            <img src="content/peliculas/720x360/robocop.jpg" alt="">
-                                            <a class="overlay-link" href="pelicula.php"><i class="fa fa-link"></i></a>
+                                            <img src="content/series/720x360/malcolm.jpg" alt="">
+                                            <a class="overlay-link" href="blog-post.html"><i class="fa fa-link"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
                                         <header>
-                                            <h2><a href="pelicula.php">Robocop</a></h2>
+                                            <h2><a href="serie.php">Malcolm</a></h2>
                                             <div class="post-info">
                                                 <span class="post-date">
                                                     <i class="icon-calendar"></i>
@@ -145,13 +145,13 @@
                                 <div class="row grid-space-10">
                                     <div class="col-md-5">
                                         <div class="overlay-container">
-                                            <img src="content/peliculas/720x360/tortugas-ninja.jpg" alt="">
-                                            <a class="overlay-link" href="pelicula.php"><i class="fa fa-link"></i></a>
+                                            <img src="content/series/720x360/alf.jpg" alt="">
+                                            <a class="overlay-link" href="blog-post.html"><i class="fa fa-link"></i></a>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
                                         <header>
-                                            <h2><a href="pelicula.php">Las Tortugas Ninja</a></h2>
+                                            <h2><a href="serie.php">Alf</a></h2>
                                             <div class="post-info">
                                                 <span class="post-date">
                                                     <i class="icon-calendar"></i>
@@ -175,13 +175,13 @@
                                     <div class="col-md-5">
                                         <div class="overlay-container">
                                             <a href="#">
-                                                <img src="content/peliculas/720x360/batman.jpg" alt="">
+                                                <img src="content/series/720x360/x-files.jpg" alt="">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col-md-7">
                                         <header>
-                                            <h2><a href="pelicula.php">Batman</a></h2>
+                                            <h2><a href="serie.php">X Files</a></h2>
                                             <div class="post-info">
                                                 <span class="post-date">
                                                     <i class="icon-calendar"></i>
