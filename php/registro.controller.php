@@ -6,12 +6,15 @@ $errors = validarRegistro();
 
 //si hay errores conrto la ejecucion y los devuelvo
 if (count($errors)) {
-	$_SESSION['errors'] = $errors;
-	header('Location: ../registro.php');
-	exit();
+    $_SESSION['errors'] = $errors;
+    header('Location: ../registro.php');
+    exit;
 }
 
-guardarUsuario($path);
+if ($error = guardarImagenUsuario()) {
+    $_SESSION['errors'][] = $error;
+    header('Location: ../registro.php');
+    exit;
+}
 
-$path = dirname(__FILE__) . '/../images/';
-guardarImagen('avatar', $path);
+$user = guardarUsuario();

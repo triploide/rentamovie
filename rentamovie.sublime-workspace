@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"UPLOAD",
+				"UPLOAD_ERR_OK〔constant〕"
+			],
+			[
+				"PATHIN",
+				"PATHINFO_EXTENSION〔constant〕"
+			],
+			[
+				"path",
+				"pathinfo〔function〕"
+			],
+			[
 				"se",
 				"segundosDesde1970"
 			],
@@ -323,6 +335,32 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "php/registro.controller.php",
+			"settings":
+			{
+				"buffer_size": 396,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "usuarios.json",
+			"settings":
+			{
+				"buffer_size": 135,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "php/helpers.php",
+			"settings":
+			{
+				"buffer_size": 2497,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -381,10 +419,24 @@
 	},
 	"expanded_folders":
 	[
-		"/C/wamp/www/greentomato/rentamovie"
+		"/C/wamp/www/greentomato/rentamovie",
+		"/C/wamp/www/greentomato/rentamovie/content",
+		"/C/wamp/www/greentomato/rentamovie/content/usuarios",
+		"/C/wamp/www/greentomato/rentamovie/php"
 	],
 	"file_history":
 	[
+		"/C/wamp/www/greentomato/rentamovie/usuarios.json",
+		"/C/wamp/www/greentomato/rentamovie/.gitignore",
+		"/C/wamp/www/greentomato/rentamovie/content/usuarios/.gitignore",
+		"/C/wamp/www/greentomato/rentamovie/php/helpers.php",
+		"/C/wamp/www/greentomato/rentamovie/php/registro.controller.php",
+		"/C/wamp/www/greentomato/rentamovie/content/usuarios/.ddd",
+		"/C/wamp/www/greentomato/rentamovie/registro.php",
+		"/C/wamp/www/greentomato/proyectom/recursos/-tmp-g2k_5988-franjawordpress.sql",
+		"/C/wamp/www/greentomato/rentamovie/perfil.php",
+		"/C/wamp/www/greentomato/rentamovie/pelicula.php",
+		"/C/wamp/www/greentomato/comunicaciones/content/actividades/.gitignore",
 		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_carr_especializacion_san_isidro_derecho_tributario.php",
 		"/C/Users/Casa/Desktop/Nueva carpeta/prog_actua_san_isidro_asesoramiento_legal_de_empresas.php",
 		"/C/Users/Casa/Desktop/Nueva carpeta/men_index_progactua_san_isidro_asesoramiento_legal_de_empresas.php",
@@ -405,18 +457,13 @@
 		"/C/wamp/www/digital-house/clase9/form.php",
 		"/C/wamp/www/digital-house/clase9/php/cerrarSesion.controller.php",
 		"/C/wamp/www/digital-house/clase9/php/session.controller.php",
-		"/C/wamp/www/greentomato/rentamovie/php/helpers.php",
-		"/C/wamp/www/greentomato/rentamovie/php/registro.controller.php",
 		"/C/wamp/www/greentomato/rentamovie/episodio.php",
-		"/C/wamp/www/greentomato/rentamovie/registro.php",
 		"/C/wamp/www/greentomato/rentamovie/tpl/partials/header.php",
 		"/C/wamp/www/greentomato/rentamovie/temporada.php",
 		"/C/wamp/www/greentomato/rentamovie/tpl/aside/temporadas.php",
 		"/C/wamp/www/greentomato/rentamovie/serie.php",
 		"/C/wamp/www/greentomato/rentamovie/series.php",
 		"/C/wamp/www/greentomato/rentamovie/index.php",
-		"/C/wamp/www/greentomato/rentamovie/pelicula.php",
-		"/C/wamp/www/greentomato/rentamovie/perfil.php",
 		"/C/wamp/www/greentomato/rentamovie/tpl/aside/episodios.php",
 		"/C/wamp/www/greentomato/rentamovie/peliculas.php",
 		"/C/wamp/www/greentomato/rentamovie/tpl/aside/categorias.php",
@@ -506,13 +553,7 @@
 		"/C/wamp/www/greentomato/comunicaciones/tpl/actividad.tpl",
 		"/C/wamp/www/greentomato/developer-factory/php/erasers/grupo.eraser.php",
 		"/C/wamp/www/greentomato/developer-factory/php/erasers/consulta.eraser.php",
-		"/C/wamp/www/greentomato/developer-factory/php/models/Integrante.php",
-		"/C/wamp/www/greentomato/developer-factory/php/providers/consultas.provider.php",
-		"/C/wamp/www/greentomato/sustentar/admin/js/novedades.js",
-		"/C/wamp/www/greentomato/comunicaciones/js/actividades.js",
-		"/C/wamp/www/greentomato/developer-factory/index.php",
-		"/C/wamp/www/greentomato/developer-factory/css/custom-styles.css",
-		"/C/wamp/www/greentomato/developer-factory/tpl/partials/nav.tpl"
+		"/C/wamp/www/greentomato/developer-factory/php/models/Integrante.php"
 	],
 	"find":
 	{
@@ -539,6 +580,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"UPLOAD_ERR_OK",
+			"path",
 			"blog-post.html",
 			"components/call-to-action",
 			"php",
@@ -664,9 +707,7 @@
 			"comp",
 			"c.",
 			"compra",
-			"empty",
-			"style",
-			"$form"
+			"empty"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -734,8 +775,95 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "php/registro.controller.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								396,
+								396
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "usuarios.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 7.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "php/helpers.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								885,
+								885
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 825.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -787,6 +915,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"registro",
+				"registro.php"
+			],
 			[
 				"peliculas",
 				"peliculas.php"
@@ -1294,10 +1426,6 @@
 			[
 				"adjun",
 				"php\\models\\AdjuntoLicitacion.php"
-			],
-			[
-				"licita",
-				"php\\models\\Licitacion.php"
 			]
 		],
 		"width": 0.0
@@ -1310,6 +1438,10 @@
 		[
 			[
 				"",
+				"C:\\wamp\\www\\greentomato\\comunicaciones\\comunicaciones.sublime-project"
+			],
+			[
+				"com",
 				"C:\\wamp\\www\\greentomato\\comunicaciones\\comunicaciones.sublime-project"
 			],
 			[
