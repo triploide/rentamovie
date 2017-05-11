@@ -37,7 +37,7 @@
                 <div class="container">
                     <ol class="breadcrumb">
                         <li><i class="fa fa-home pr-10"></i><a href="/">Home</a></li>
-                        <li class="active">Registro</li>
+                        <li class="active">Login</li>
                     </ol>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                         <!-- ================ -->
                         <div class="main object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
                             <div class="form-block center-block p-30 light-gray-bg border-clear">
-                                <h2 class="title">Registro</h2>
+                                <h2 class="title">Login</h2>
                                 <?php if (isset($_SESSION['errors'])): ?>
                                     <div class="alert alert-danger">
                                         <?php foreach($_SESSION['errors'] as $error): ?>
@@ -58,26 +58,12 @@
                                         <?php endforeach; ?>
                                     </div>
                                 <?php endif; ?>
-                                <form action="php/controllers/registro.controller.php" enctype="multipar/form-data" method="post" class="form-horizontal" role="form">
-                                    <div class="form-group has-feedback">
-                                        <label for="nombre" class="col-sm-3 control-label">Nombre <span class="text-danger small">*</span></label>
-                                        <div class="col-sm-8">
-                                            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
-                                            <i class="fa fa-pencil form-control-feedback"></i>
-                                        </div>
-                                    </div>
+                                <form action="php/controllers/login.controller.php" method="post" class="form-horizontal" role="form">
                                     <div class="form-group has-feedback">
                                         <label for="email" class="col-sm-3 control-label">Email <span class="text-danger small">*</span></label>
                                         <div class="col-sm-8">
                                             <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                                             <i class="fa fa-envelope form-control-feedback"></i>
-                                        </div>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <label for="edad" class="col-sm-3 control-label">Edad <span class="text-danger small">*</span></label>
-                                        <div class="col-sm-8">
-                                            <input type="text" name="edad" class="form-control" id="edad" placeholder="Edad">
-                                            <i class="fa fa-calendar form-control-feedback"></i>
                                         </div>
                                     </div>
                                     <div class="form-group has-feedback">
@@ -87,23 +73,9 @@
                                             <i class="fa fa-lock form-control-feedback"></i>
                                         </div>
                                     </div>
-                                    <div class="form-group has-feedback">
-                                        <label for="password2" class="col-sm-3 control-label">Confirmar <span class="text-danger small">*</span></label>
-                                        <div class="col-sm-8">
-                                            <input type="password" name="password2" class="form-control" id="password2" placeholder="Confirmar contraseña">
-                                            <i class="fa fa-lock form-control-feedback"></i>
-                                        </div>
-                                    </div>
-                                    <div class="form-group has-feedback">
-                                        <label for="avatar" class="col-sm-3 control-label">Avatar</label>
-                                        <div class="col-sm-8">
-                                            <input type="file" name="avatar" class="form-control" id="avatar">
-                                            <i class="fa fa-picture-o form-control-feedback"></i>
-                                        </div>
-                                    </div>
                                     <div class="form-group">
                                         <div class="col-sm-offset-3 col-sm-8">
-                                            <button type="submit" class="btn btn-group btn-default btn-animated">Registrame <i class="fa fa-check"></i></button>
+                                            <button type="submit" class="btn btn-group btn-default btn-animated">Login <i class="fa fa-check"></i></button>
                                         </div>
                                     </div>
                                 </form>
@@ -125,6 +97,4 @@
 
     </body>
 </html>
-<?php
-unset($_SESSION['errors']);
-?>
+<?php unset($_SESSION['errors']); ?>

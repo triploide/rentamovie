@@ -1,6 +1,4 @@
-<?php
-include('php/helpers.php');
-?>
+<?php include 'php/config.php'; ?>
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if gt IE 9]> <html lang="en" class="ie"> <![endif]-->

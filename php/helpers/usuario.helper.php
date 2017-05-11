@@ -2,12 +2,25 @@
 //abm usuario
 function getUsers ()
 {
-    $users = @file_get_contents(__DIR__.'/../usuarios.json');
+    global $CONFIG;
+    $users = @file_get_contents($CONFIG['include'].'usuarios.json');
     return (!$users)?[]:json_decode($users, true);
+}
+
+function getUserByEmail($email)
+{
+    $usuarios = getUsers();
+    foreach ($usuarios as $usuario) {
+       if ($usuario['email'] == $email) {
+            return $usuario;
+       }
+    }
+    return false;
 }
 
 function guardarUsuario()
 {
+    global $CONFIG;
     //users es un array de arrays usuarios
     $users = getUsers();
     
@@ -23,16 +36,18 @@ function guardarUsuario()
     //lo codifico a json
     $users = json_encode($users);
     //guardarlo en el archivo json
-    file_put_contents(__DIR__.'/../usuarios.json', $users);
+    file_put_contents($CONFIG['include'].'usuarios.json', $users);
 
     return $newUser;
 }
 
 function guardarImagenUsuario()
 {
+    global $CONFIG;
+
     $errores = '';
     $file = $_FILES['avatar'];
-    $path = __DIR__.'/../content/usuarios/';
+    $path = $CONFIG['include'].'content/usuarios/';
 
     $tiposPermitidos = ['png', 'jpg', 'jpeg', 'gif'];
 
