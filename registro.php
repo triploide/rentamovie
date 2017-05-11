@@ -42,93 +42,77 @@
                 </div>
             </div>
             <!-- breadcrumb end -->
-        
-            <!-- main-container start -->
-            <!-- ================ -->
-            <section class="temporada-container">
 
+            <div class="main-container dark-translucent-bg" style="background-image:url('images/living.jpg');">
                 <div class="container">
-
                     <div class="row">
-
                         <!-- main start -->
                         <!-- ================ -->
-                        <div class="main col-md-12">
-
-                            <!-- page-title start -->
-                            <!-- ================ -->
-                            <h1 class="page-title">Registro</h1>
-                            <div class="separator-2"></div>
-                            <!-- page-title end -->
-
-                            <div class="row">
-                                <div class="col-md-10 col-md-offset-1">
-                                    <?php if (isset($_SESSION['errors'])): ?>
-                                        <div class="alert alert-danger">
-                                            <?php foreach($_SESSION['errors'] as $error): ?>
-                                                <p><?php echo $error; ?></p>
-                                            <?php endforeach; ?>
+                        <div class="main object-non-visible animated object-visible fadeInUpSmall" data-animation-effect="fadeInUpSmall" data-effect-delay="100">
+                            <div class="form-block center-block p-30 light-gray-bg border-clear">
+                                <h2 class="title">Registro</h2>
+                                <?php if (isset($_SESSION['errors'])): ?>
+                                    <div class="alert alert-danger">
+                                        <?php foreach($_SESSION['errors'] as $error): ?>
+                                            <p><?php echo $error; ?></p>
+                                        <?php endforeach; ?>
+                                    </div>
+                                <?php endif; ?>
+                                <form action="php/controllers/registro.controller.php" enctype="multipar/form-data" method="post" class="form-horizontal" role="form">
+                                    <div class="form-group has-feedback">
+                                        <label for="nombre" class="col-sm-3 control-label">Nombre <span class="text-danger small">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                                            <i class="fa fa-pencil form-control-feedback"></i>
                                         </div>
-                                    <?php endif; ?>
-
-                                    <form action="php/registro.controller.php" method="post" enctype="multipart/form-data" class="form-horizontal">
-                                        <div class="form-group">
-                                            <label for="nombre" class="col-sm-2 control-label">Nombre</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" name="nombre" class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="email" class="col-sm-3 control-label">Email <span class="text-danger small">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                            <i class="fa fa-envelope form-control-feedback"></i>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="email" class="col-sm-2 control-label">Email</label>
-                                            <div class="col-sm-10">
-                                                <input type="email" name="email" class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="edad" class="col-sm-3 control-label">Edad <span class="text-danger small">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="edad" class="form-control" id="edad" placeholder="Edad">
+                                            <i class="fa fa-calendar form-control-feedback"></i>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="edad" class="col-sm-2 control-label">Edad</label>
-                                            <div class="col-sm-10">
-                                                <input type="number" name="edad" class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="password" class="col-sm-3 control-label">Contraseña <span class="text-danger small">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="password" name="password" class="form-control" id="password" placeholder="Contraseña">
+                                            <i class="fa fa-lock form-control-feedback"></i>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="password" class="col-sm-2 control-label">Contraseña</label>
-                                            <div class="col-sm-10">
-                                                <input type="password" name="password" class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="password2" class="col-sm-3 control-label">Confirmar <span class="text-danger small">*</span></label>
+                                        <div class="col-sm-8">
+                                            <input type="password" name="password2" class="form-control" id="password2" placeholder="Confirmar contraseña">
+                                            <i class="fa fa-lock form-control-feedback"></i>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="password2" class="col-sm-2 control-label">Confirmación</label>
-                                            <div class="col-sm-10">
-                                                <input type="password" name="password2" class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group has-feedback">
+                                        <label for="avatar" class="col-sm-3 control-label">Avatar</label>
+                                        <div class="col-sm-8">
+                                            <input type="file" name="avatar" class="form-control" id="avatar">
+                                            <i class="fa fa-picture-o form-control-feedback"></i>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="avatar" class="col-sm-2 control-label">Avatar</label>
-                                            <div class="col-sm-10">
-                                                <input type="file" name="avatar" class="form-control">
-                                            </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-3 col-sm-8">
+                                            <button type="submit" class="btn btn-group btn-default btn-animated">Registrame <i class="fa fa-check"></i></button>
                                         </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-10 col-sm-offset-2 text-right">
-                                                <input type="submit" name="enviador" class="btn btn-default" value="Enviar">
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                         <!-- main end -->
-
                     </div>
                 </div>
-            </section>
-            <!-- main-container end -->
+            </div>
 
             <?php include "tpl/components/calls-to-action/recomendaciones.php"; ?>
 

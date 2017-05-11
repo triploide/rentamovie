@@ -58,3 +58,23 @@ html {overflow-x: hidden !important}
 .temporada-container  {
     padding-bottom: 70px
 }
+
+.header-dropdown-buttons .btn-group > .btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    padding: 0 8px;
+    line-height: auto;
+}
+
+.login-form li {list-style: none}
+
+.dropdown > a.dropdown-user {text-decoration: none}
+.dropdown > a.dropdown-user:before {content: ""; display: none}
+.dropdown-user span {font-size: 16px; margin-right: 10px; color: #dc5b5b; cursor: pointer;}
+.dropdown-user .avatar {    
+    border-radius: 100%; width: 40px; height: 40px; padding: 0; display: inline-block;
+}
+.header-dropdown-buttons .btn-group .dropdown-menu {margin-top: 17px}
