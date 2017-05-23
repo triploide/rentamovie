@@ -1,4 +1,7 @@
-<?php include 'php/config.php'; ?>
+<?php
+include 'php/config.php';
+include 'php/middlewares/guest.middleware.php';
+?>
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if gt IE 9]> <html lang="en" class="ie"> <![endif]-->
@@ -75,6 +78,11 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-offset-3 col-sm-8">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" name="recordarme"> Recordarme
+                                                </label>
+                                            </div>
                                             <button type="submit" class="btn btn-group btn-default btn-animated">Login <i class="fa fa-check"></i></button>
                                         </div>
                                     </div>

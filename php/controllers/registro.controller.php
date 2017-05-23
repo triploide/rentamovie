@@ -12,10 +12,18 @@ if (count($errors)) {
     exit;
 }
 
+//alta de usuario
+$usuario = crearUsuario();
+
 if ($error = guardarImagenUsuario()) {
     $_SESSION['errors'][] = $error;
     header('Location: '.$CONFIG['url'].'registro.php');
     exit;
 }
 
-$user = guardarUsuario();
+guardarUsuario($usuario);
+
+//login
+$_SESSION['login'] = true;
+$_SESSION['usuario'] = $usuario;
+header('Location: '.$CONFIG['url'].'perfil.php');

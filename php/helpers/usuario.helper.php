@@ -18,12 +18,8 @@ function getUserByEmail($email)
     return false;
 }
 
-function guardarUsuario()
+function crearUsuario()
 {
-    global $CONFIG;
-    //users es un array de arrays usuarios
-    $users = getUsers();
-    
     //newUser es un array del tipo usuario
     $newUser = [
         'nombre' => $_POST['nombre'],
@@ -31,19 +27,27 @@ function guardarUsuario()
         'edad' => $_POST['edad'],
         'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
     ];
+
+    return $newUser;
+}
+
+function guardarUsuario($usuario)
+{
+    global $CONFIG;
+    //users es un array de arrays usuarios
+    $users = getUsers();
     //guardo newUser dentro del array de usuarios
-    $users[] = $newUser;
+    $users[] = $usuario;
     //lo codifico a json
     $users = json_encode($users);
     //guardarlo en el archivo json
     file_put_contents($CONFIG['include'].'usuarios.json', $users);
-
-    return $newUser;
 }
 
 function guardarImagenUsuario()
 {
     global $CONFIG;
+    global $usuario;
 
     $errores = '';
     $file = $_FILES['avatar'];
@@ -60,16 +64,12 @@ function guardarImagenUsuario()
         } else {
             $nombre = str_replace('@', '-', $_POST['email']);
             $nombre = str_replace('.', '-', $nombre);
+            $usuario['avatar'] = $nombre.'.'.$ext;
             move_uploaded_file($archivo, $path.$nombre.'.'.$ext);
         }
     } else {
         $errores = "Hubo un problema en la carga de la imagen";
     }
     return $errores;
-}
-function getImageUser ($email) {
-    $path = str_replace('@', '-', $email);
-    $path = str_replace('.', '-', $path);
-    return 'images/'.$path.'.png';
 }
 //----------

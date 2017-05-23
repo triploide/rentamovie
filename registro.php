@@ -58,7 +58,7 @@
                                         <?php endforeach; ?>
                                     </div>
                                 <?php endif; ?>
-                                <form action="php/controllers/registro.controller.php" enctype="multipar/form-data" method="post" class="form-horizontal" role="form">
+                                <form action="php/controllers/registro.controller.php" enctype="multipart/form-data" method="POST" class="form-horizontal" role="form">
                                     <div class="form-group has-feedback">
                                         <label for="nombre" class="col-sm-3 control-label">Nombre <span class="text-danger small">*</span></label>
                                         <div class="col-sm-8">

@@ -1,4 +1,7 @@
-<?php include 'php/config.php'; ?>
+<?php
+include 'php/config.php';
+include 'php/middlewares/auth.middleware.php';
+?>
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if gt IE 9]> <html lang="en" class="ie"> <![endif]-->
@@ -61,11 +64,46 @@
                             <div class="separator-2"></div>
                             <!-- page-title end -->
 
-                            <?php
-                                $path = getImageUser('bart@mail.com');
-                            ?>
 
-                            <img src="<?php echo $path; ?>" alt="Avatar">
+                            <div class="image-box style-3 mb-20 dark-bg">
+                                <div class="row grid-space-0">
+                                    <div class="col-md-6">
+                                        <div class="overlay-container">
+                                            <img src="/content/usuarios/<?php echo($_SESSION['usuario']['avatar']); ?>" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="body">
+                                            <div class="pv-30 visible-lg"></div>
+                                            <h3><?php echo($_SESSION['usuario']['nombre']); ?></h3>
+                                            <p class="small mb-10"><i class="fa fa-envelope-o"></i> <?php echo($_SESSION['usuario']['email']); ?></p>
+                                            <div class="separator-2"></div>
+                                            <p class="margin-clear">
+                                                <ul class="list-icons">
+                                                    <li>
+                                                        <i class="fa fa-lock"></i>
+                                                        Último login: 1 de marzo de 2017
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-youtube-play"></i>
+                                                        Última visualización: "Tengo una nueva actitud" - Alf
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-dollar"></i>
+                                                        Saldo en cuenta: $52.00
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa fa-credit-card"></i>
+                                                        Puntos: 45.200
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <br>
+                                            <a href="#" class="btn btn-gray-transparent btn-animated margin-clear">Editar datos<i class="fa fa-arrow-right pl-10"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                         <!-- main end -->

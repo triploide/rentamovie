@@ -14,6 +14,10 @@
                         <input type="password" name="password" class="form-control">
                         <i class="fa fa-lock form-control-feedback"></i>
                     </div>
+                    <div class="form-group has-feedback">
+                        <input type="checkbox" name="recordarme" id="recordarme">
+                        <label class="control-label" for="recordarme">Recordarme</label>
+                    </div>
                     <button type="submit" class="btn btn-gray btn-sm">Login</button>
                     <span class="pl-5 pr-5">o</span>
                     <a href="/registro.php" class="btn btn-default btn-sm">Registro</a>
