@@ -1,7 +1,7 @@
 <?php
 if (!isset($CONFIG)) include '../config.php';
 include $CONFIG['include'] . 'php/validators/registro.validator.php';
-include $CONFIG['include'] . 'php/helpers/usuario.helper.php';
+include $CONFIG['include'] . 'php/classes/Usuario.php';
 
 $errors = validarRegistro();
 
@@ -13,6 +13,7 @@ if (count($errors)) {
 }
 
 //alta de usuario
+/*
 $usuario = crearUsuario();
 
 if ($error = guardarImagenUsuario()) {
@@ -22,6 +23,11 @@ if ($error = guardarImagenUsuario()) {
 }
 
 guardarUsuario($usuario);
+*/
+
+$usuario = new Usuario($_POST['nombre'], $_POST['email'], $_POST['password'], $_POST['edad']);
+$usuario->save();
+exit();
 
 //login
 $_SESSION['login'] = true;
