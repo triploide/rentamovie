@@ -7,8 +7,7 @@ $usuario->save();
 */
 
 $pelicula = Pelicula::find(5);
-var_dump($pelicula); exit;
-$usuario->edad = 26;
-$usuario->save();
+$pelicula->titulo = 'Avatar 2';
+$pelicula->save();
 
 

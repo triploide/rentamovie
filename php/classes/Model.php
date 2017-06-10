@@ -32,4 +32,31 @@ class Model {
         }
     }
 
+    public function save()
+    {
+        $sql = ($this->id)?$this->update():$this->insert();
+        $stmt = DB::getConn()->prepare($sql);
+        foreach ($this->fillable as $column) {
+            $stmt->bindValue(":$column", $this->$column);
+        }
+        $stmt->execute();
+    }
+
+    private function insert()
+    {
+        $columns = implode(', ', $this->fillable);
+        $placeholders = ':'.implode(', :', $this->fillable);
+        return "INSERT INTO ".static::$table." ($columns) VALUES ($placeholders)";
+    }
+
+    private function update()
+    {
+        $set = '';
+        foreach ($this->fillable as $column) {
+            $set .= "$column=:$column,";
+        }
+        $set = trim($set, ",");
+        return "UPDATE ".static::$table." SET $set WHERE id = ".$this->id;
+    }
+
 }
